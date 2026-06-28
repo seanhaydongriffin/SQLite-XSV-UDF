@@ -23,6 +23,7 @@ https://www.rust-lang.org/tools/install
 
 ### Step 4 - Install the MSVC Build Tools (C compiler + linker) - if you have not done previously
 https://visualstudio.microsoft.com/downloads/#build-tools-for-visual-studio
+
 During installation, select:
 - Desktop development with C++
 
