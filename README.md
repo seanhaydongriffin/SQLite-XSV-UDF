@@ -1,7 +1,7 @@
 # SQLite-XSV-UDF
 An AutoIt UDF for CSV file manipulation using sqlite-xsv
 
-## Amalgamating SQLite3 and sqlite-xsv into a single DLL
+## Build notes - How to amalgamate SQLite3 and sqlite-xsv into a single DLL
 
 The following steps I followed to amalgamate SQLite + sqlite-xsv + auto-registered CSV module together into a Single DLL that could be used in AutoIt.
 
