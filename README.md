@@ -63,6 +63,16 @@ int sqlite3_extension_init(sqlite3 *db, char **pzErrMsg, const sqlite3_api_routi
 }
 ```
 
+### Step 7 - Build the DLL using MSVC
+Open a Developer Command Prompt for VS 2022.
+Navigate (cd) into the SQLite Amalgamation folder.
+Run this command (replacing the paths as required):
+`cl /LD /Fe:sqlite3_xsv.dll /DSQLITE_ENABLE_VIRTUAL_TABLE /DSQLITE_ENABLE_COLUMN_METADATA /DSQLITE_API=__declspec(dllexport) sqlite3.c init_xsv.c sqlite-xsv-main\target\release\sqlite_xsv.lib ws2_32.lib ntdll.lib userenv.lib msvcrt.lib`
+If everything is correct, MSVC will produce:
+```
+sqlite3_xsv.dll
+sqlite3_xsv.lib
+sqlite3_xsv.exp
+```
 
-
-
+### Step 8 — Test the DLL in AutoIt
